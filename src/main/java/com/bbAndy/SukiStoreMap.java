@@ -47,8 +47,6 @@ public class SukiStoreMap {
         file1 = new File("./src/main/resources/serviceAccountKey.json"); 
         file2 = new File("serviceAccountKey.json");
         file3 = new File("D:\\home\\site\\wwwroot\\serviceAccountKey.json");
-        file4 = new File("../serviceAccountKey.json");
-        
 
         if (file1.exists()){
             serviceAccount = new FileInputStream(file1);
@@ -62,9 +60,6 @@ public class SukiStoreMap {
             serviceAccount = new FileInputStream(file3);
         }
 
-        if (file4.exists()){
-            serviceAccount = new FileInputStream(file4);
-        }
 
         options = new FirebaseOptions.Builder()
         .setCredentials(GoogleCredentials.fromStream(serviceAccount))
@@ -128,7 +123,7 @@ public class SukiStoreMap {
 
         try {
             kdTree.setInstances(instances);
-            nearest = kdTree.kNearestNeighbours(instances.get(0), 5);
+            nearest = kdTree.kNearestNeighbours(instances.get(0), 50);
             for(Instance near: nearest){
 
                 double lat1 = inputLatitude;

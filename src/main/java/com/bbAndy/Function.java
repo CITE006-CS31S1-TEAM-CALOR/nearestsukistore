@@ -44,7 +44,7 @@ public class Function {
             SukiStoreMap.initializeMap();
             String[] parsedGeopoint = name.split(",");
 
-            String nearestStores = SukiStoreMap.findNearestStore(Double.valueOf(parsedGeopoint[0]), Double.valueOf(parsedGeopoint[1]), 150);
+            String nearestStores = SukiStoreMap.findNearestStore(Double.valueOf(parsedGeopoint[0]), Double.valueOf(parsedGeopoint[1]), 300);
             return request.createResponseBuilder(HttpStatus.OK).body(nearestStores).build();
         }
     }
