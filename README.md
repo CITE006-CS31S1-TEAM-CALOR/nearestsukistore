@@ -2,7 +2,7 @@
 Azure Function App that accepts user's geopoint and returns JSON-formatted details of Suki stores within 150 meters from a given geopoint.
 
 URL open upon request to limit Azure budget
-URL: https://nearestsukistore.azurewebsites.net/api/HttpExample?name=<Latitude>,<Longitude>
+URL: https://nearestsukistore.azurewebsites.net/api/HttpExample?name=[Latitude],[Longitude]
 
 Ex. https://nearestsukistore.azurewebsites.net/api/HttpExample?name=14.559260950531156,121.08307323787268
 Outputs:
