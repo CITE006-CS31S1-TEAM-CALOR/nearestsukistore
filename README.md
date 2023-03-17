@@ -1,4 +1,9 @@
 # nearestsukistore
+
+<----------
+Function App no longer accessible online due to Azure Student Subscription Expiration 
+----------->
+
 Azure Function App that accepts user's geopoint and returns JSON-formatted details of Suki stores within 150 meters from a given geopoint.
 
 URL open upon request to limit Azure budget
